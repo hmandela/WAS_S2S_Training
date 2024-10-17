@@ -35,7 +35,7 @@
     "href": "Python.html",
     "title": "2  Overview of Data Structures in Python and the Libraries NumPy and Xarray.",
     "section": "",
-    "text": "keys points: Python builtin data structures and data science package (Numpy and Xarray, …) (Mandela HOUNGNIBO)\n\nDownload and Install anaconda\n\n\nFor Windows, download the executable here\nFor Linux (Ubuntu), in the terminal run:\nsudo apt-get update\nsudo apt-get upgrade\nsudo apt-get install wget\nwget -c -r https://repo.anaconda.com/archive/Anaconda3-2024.06-1-Linux-x86_64.sh --no-check-certificate\n\n\nData Structures in Python: Download notebook here\nLibraries NumPy and Xarray: Download notebook here",
+    "text": "Facilitator: Mandela HOUNGNIBO\nkeys points: Python builtin data structures and data science package (Numpy and Xarray, …)\n\nDownload and Install anaconda\n\n\nFor Windows, download the executable here\nFor Linux (Ubuntu), in the terminal run:\nsudo apt-get update\nsudo apt-get upgrade\nsudo apt-get install wget\nwget -c -r https://repo.anaconda.com/archive/Anaconda3-2024.06-1-Linux-x86_64.sh --no-check-certificate\n\n\nData Structures in Python: Download notebook here\nLibraries NumPy and Xarray: Download notebook here",
     "crumbs": [
       "Week 1- Overview: Climate and its variability in WAS, Overview on python and validation of seasonal forecast of global climate centers.",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Overview of Data Structures in Python and the Libraries NumPy and Xarray.</span>"
@@ -61,6 +61,17 @@
     "crumbs": [
       "Week 1- Overview: Climate and its variability in WAS, Overview on python and validation of seasonal forecast of global climate centers.",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>NMME and C3S Models in Climate Data Store and IRI Data Library</span>"
+    ]
+  },
+  {
+    "objectID": "Install_pycpt_xcast.html",
+    "href": "Install_pycpt_xcast.html",
+    "title": "7  Install PyCPT and Xcast.",
+    "section": "",
+    "text": "Facilitator: Bernard MINOUNGOU / Mandela HOUNGNIBO",
+    "crumbs": [
+      "Week 1- Overview: Climate and its variability in WAS, Overview on python and validation of seasonal forecast of global climate centers.",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Install PyCPT and Xcast.</span>"
     ]
   },
   {

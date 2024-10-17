@@ -1,0 +1,76 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Job-Training on New Generation of Seasonal Forecast in West Africa and the Sahel",
+    "section": "",
+    "text": "Background\nAGRHYMET RCC-WAS plays a leading role in climate services and agro-hydro-meteorological monitoring in the region. In recent years, AGRHYMET has committed to strengthening its forecasting capacities in line with World Meteorological Organization (WMO) Decision 9 (EC-72). This decision emphasizes the need for objective, operational, transparent, and scientifically rigorous seasonal forecasting methods. The guidelines provided by WMO in 2020 on operational practices for objective seasonal forecasting offer the necessary framework to guide regional centers and National Meteorological and Hydrological Services (NMHSs) in transitioning towards more standardized and automated forecasting systems.\nTo achieve these objectives, AGRHYMET has initiated efforts to improve the reproducibility of seasonal forecasts by automating key steps in the forecasting process. This transition is crucial to ensuring that the forecasting process becomes not only more consistent but also more accessible for future evaluations and improvements. Phase I of the project “Accelerating Impacts of CGIAR Climate Research for Africa” (AICCRA) has played a central role in this transition. AICCRA focuses on strengthening climate services in Africa, and in this context, AGRHYMET has leveraged the project to develop and implement innovative forecasting tools. One of the key outcomes of these efforts is the development and deployment of PyCPT (Python Climate Predictability Tool) which automates the statistical methods used for seasonal forecasts. [PyCPT]() is a powerful tool that enhances the traceability and reproducibility of forecasts, facilitating the evaluation and refinement of forecasting methodologies. Thanks to PyCPT, seasonal forecasts no longer rely on manual adjustments and subjective consensus processes, leading to more consistent and scientifically defensible results.\nBeyond automation, AGRHYMET is also exploring new technological opportunities to further improve forecasting capabilities. The use of artificial intelligence (AI) and machine learning (ML) is currently being explored as a way to enhance the accuracy and speed of seasonal and sub-seasonal forecasts. AI-based approaches offer the ability to analyze large datasets, recognize complex patterns, and make forecasts that are more adaptive to changing climate conditions. These technologies promise to complement existing methods and provide more robust and reliable forecasts, especially in a region as complex and variable as West Africa and the Sahel.\nAGRHYMET’s ongoing work includes a comprehensive assessment of these new methods in comparison to existing ones. This evaluation aims to measure the effectiveness of AI and machine learning tools, as well as traditional statistical methods, in generating accurate and actionable seasonal forecasts. Additionally, the possibility of combining these new methods with traditional ones is being explored to create consolidated forecasts that leverage the strengths of each approach. The goal is to produce forecasts that are not only more reliable but also more useful for end-users, such as farmers, water resource managers, and policymakers across the region.\nIn response to these advancements, AGRHYMET recognizes the need to strengthen the capacities of its partners across West Africa and the Sahel. Many countries in the region depend on seasonal forecasts to make critical decisions that affect their economies and societies, particularly in the areas of agriculture, disaster risk management, and water resource planning. It is essential that NMHSs and other relevant institutions are equipped with the knowledge and skills needed to use both traditional and new forecasting methods to achieve broader goals of climate resilience and sustainable development in the region. This training workshop is therefore designed to address this capacity-building need by training participants from 17 West African countries on the full range of seasonal and sub-seasonal forecasting methodologies. The workshop will provide participants with practical experience in using tools such as PyCPT and Xcast, while also introducing them to AI-based approaches. Additionally, the training will focus on evaluating the different methodologies, helping participants understand the strengths and limitations of each approach and how they can be applied in their respective national contexts.",
+    "crumbs": [
+      "Background"
+    ]
+  },
+  {
+    "objectID": "intro_gen.html",
+    "href": "intro_gen.html",
+    "title": "Workshop Objectives",
+    "section": "",
+    "text": "The main objectives of this training workshop are to:\n\nEvaluate seasonal forecasts from global climate centers; - Introduce and train participants on new methods and tools, such as PyCPT, Xcast, and other AI-based methods currently being explored for seasonal and sub-seasonal forecasting;\nProvide hands-on experience in the comprehensive evaluation of new methods to facilitate an understanding of their strengths and weaknesses in the context of forecasting for West Africa and the Sahel;\nMaster the combination of the most effective methods to generate more consolidated and accurate seasonal forecasts for the region;\nEquip participants with the skills necessary to implement these forecasting methodologies operationally within their institutions, thereby improving forecasting services and climate services across the region.",
+    "crumbs": [
+      "Workshop Objectives"
+    ]
+  },
+  {
+    "objectID": "climate_and_its_variability.html",
+    "href": "climate_and_its_variability.html",
+    "title": "1  Climate and its variability in West Africa and the Sahel",
+    "section": "",
+    "text": "Facilitator: Mandela HOUNGNIBO\nkeys points:\n\n\nWest African Climate and Trends,\nClimate characteristics in West Africa and the Sahel,\nKey factors influencing climate variability,\n…\n\nDownload materials here",
+    "crumbs": [
+      "Week 1- Overview: Climate and its variability in WAS, Overview on python and validation of seasonal forecast of global climate centers.",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Climate and its variability in West Africa and the Sahel</span>"
+    ]
+  },
+  {
+    "objectID": "Python.html",
+    "href": "Python.html",
+    "title": "2  Overview of Data Structures in Python and the Libraries NumPy and Xarray.",
+    "section": "",
+    "text": "keys points: Python builtin data structures and data science package (Numpy and Xarray, …) (Mandela HOUNGNIBO)\n\nDownload and Install anaconda\n\n\nFor Windows, download the executable here\nFor Linux (Ubuntu), in the terminal run:\nsudo apt-get update\nsudo apt-get upgrade\nsudo apt-get install wget\nwget -c -r https://repo.anaconda.com/archive/Anaconda3-2024.06-1-Linux-x86_64.sh --no-check-certificate\n\n\nData Structures in Python: Download notebook here\nLibraries NumPy and Xarray: Download notebook here",
+    "crumbs": [
+      "Week 1- Overview: Climate and its variability in WAS, Overview on python and validation of seasonal forecast of global climate centers.",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Overview of Data Structures in Python and the Libraries NumPy and Xarray.</span>"
+    ]
+  },
+  {
+    "objectID": "s2s_Foundations.html",
+    "href": "s2s_Foundations.html",
+    "title": "3  Seasonal Forecasts: Basis, Approaches in West Africa.",
+    "section": "",
+    "text": "Facilitator: Mandela HOUNGNIBO\nkeys points:\n\nScientific fundations,\nMain approaches in seasonal forecasts,\nUncertainty and its taking account,\n…\n\nDownload materials here",
+    "crumbs": [
+      "Week 1- Overview: Climate and its variability in WAS, Overview on python and validation of seasonal forecast of global climate centers.",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Seasonal Forecasts: Basis, Approaches in West Africa.</span>"
+    ]
+  },
+  {
+    "objectID": "s2s_data.html",
+    "href": "s2s_data.html",
+    "title": "4  NMME and C3S Models in Climate Data Store and IRI Data Library",
+    "section": "",
+    "text": "Facilitator: Mandela HOUNGNIBO\n\nCreate CDS API key and use it to download NMME and C3S models data from the Climate Data Store (CDS) and IRI Data Library.\n\n\nCreate an account with Copernicus by signing up here\nOnce you successfully create an account, kindly log in to your Copernicus account and click on your name at the top right corner of the page. Note your UID and API key.\n\n\nConfigure .cdsapirc file.\n\nIn your activated terminal, kindly initiate the Python interpreter by entering the command python3. Subsequently, carefully copy and paste the below code, ensuring to replace “UID” and “API_KEY” with yours.\nimport os\n\nconfig_data = '''url: https://cds.climate.copernicus.eu/api/v2\nkey: UID:API_KEY\nverify: 0\n'''\n\npath_to_home = \"/\".join([os.path.expanduser('~'),\".cdsapirc\"])\n\nif not os.path.exists(path_to_home):\n    with open(path_to_home, 'w') as file:\n        file.write(config_data)",
+    "crumbs": [
+      "Week 1- Overview: Climate and its variability in WAS, Overview on python and validation of seasonal forecast of global climate centers.",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>NMME and C3S Models in Climate Data Store and IRI Data Library</span>"
+    ]
+  },
+  {
+    "objectID": "part1.html",
+    "href": "part1.html",
+    "title": "Week 1- Overview: Climate and its variability in WAS, Overview on python and validation of seasonal forecast of global climate centers.",
+    "section": "",
+    "text": "Timeline\n\n\n\n\nTime\nMonday\nTuesday\nWednesday\nThursday\nFriday\n\n\n\n\n08:30 - 10:00\nOpening and Presentation of Participants\nDebrief with Participants\nObservational Datasets\nValidation of Dynamical Seasonal Forecast\nParticipants Presentations on Validation\n\n\nBreak\n\n\n\n\n\n\n\n10:30 - 12:30\nClimate and its Variability in West Africa and the Sahel\nSeasonal Forecasts: Scientific foundations, Approaches, …\nValidation of Dynamical Seasonal Forecast\nValidation of Dynamical Seasonal Forecast\nParticipants Presentations on Validation\n\n\nBreak\n\n\n\n\n\n\n\n14:00 - 17:00\nOverview of Data Structures in Python and the Libraries NumPy and Xarray\nNMME and C3S Models in Climate Data Store and IRI Data Library\nValidation of Dynamical Seasonal Forecast\nValidation of Dynamical Seasonal Forecast\nPyCPT and Xcast Installation\n\n\n\n\nParticipant exercise time in green",
+    "crumbs": [
+      "Week 1- Overview: Climate and its variability in WAS, Overview on python and validation of seasonal forecast of global climate centers."
+    ]
+  }
+]

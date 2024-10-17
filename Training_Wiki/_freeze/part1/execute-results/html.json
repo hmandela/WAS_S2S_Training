@@ -1,0 +1,15 @@
+{
+  "hash": "9cde1a95da417964987a233ccf85d68d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "# Week 1- Overview: Climate and its variability in WAS, General introduction to python and validation of seasonal forecast of global climate centers.\n\n# Timeline\n<div style=\"width: 100%; margin: auto; font-family: Arial, sans-serif; font-size: 12px;\">\n\n| Time             | <strong>Monday</strong>                                | <strong>Tuesday</strong>                              | <strong>Wednesday</strong>                        | <strong>Thursday</strong>                        | <strong>Friday</strong>                               |\n|------------------|--------------------------------------------------------|-------------------------------------------------------|---------------------------------------------------|--------------------------------------------------|--------------------------------------------------------|\n| **08:30 - 10:00** | Opening and Presentation of Participants               | Debrief with Participants                              | Observational Datasets                            | Validation of Dynamical Seasonal Forecast         | Participants Presentations on Validation              |\n| **Break**        |                                                        |                                                       |                                                   |                                                  |                                                        |\n| **10:30 - 12:30** | Climate and its Variability in West Africa and the Sahel | Seasonal Forecasts: Foundations, Approaches in West Africa | Validation of Dynamical Seasonal Forecast         | Validation of Dynamical Seasonal Forecast         | Participants Presentations on Validation              |\n| **Break**        |                                                        |                                                       |                                                   |                                                  |                                                        |\n| **14:00 - 17:00** | General Introduction to Python                        | NMME and C3S Models in Climate Data Store and IRI Data Library | Validation of Dynamical Seasonal Forecast         | Validation of Dynamical Seasonal Forecast         | PyCPT and Xcast Installation                         |\n\n</div>\n\n\n\n\n\n\n\n\n::: {.cell}\n\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

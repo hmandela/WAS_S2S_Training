@@ -83,5 +83,15 @@
     "crumbs": [
       "Week 1- Overview: Climate and its variability in WAS, Overview on python and validation of seasonal forecast of global climate centers."
     ]
+  },
+  {
+    "objectID": "part2.html",
+    "href": "part2.html",
+    "title": "Week 2- Statistical seasonal climate forecasting with applications",
+    "section": "",
+    "text": "Timeline\n\n\n\n\nTime\nMonday\nTuesday\nWednesday\nThursday\nFriday\n\n\n\n\n08:30 - 10:00\nReview installation\nDebrief with Participants\nObservational Datasets\nValidation of Dynamical Seasonal Forecast\nParticipants Presentations on Validation\n\n\nBreak\n\n\n\n\n\n\n\n10:30 - 12:30\nClimate and its Variability in West Africa and the Sahel\nSeasonal Forecasts: Scientific foundations, Approaches, …\nValidation of Dynamical Seasonal Forecast\nValidation of Dynamical Seasonal Forecast\nParticipants Presentations on Validation\n\n\nBreak\n\n\n\n\n\n\n\n14:00 - 17:00\nOverview of Data Structures in Python and the Libraries NumPy and Xarray\nNMME and C3S Models in Climate Data Store and IRI Data Library\nValidation of Dynamical Seasonal Forecast\nValidation of Dynamical Seasonal Forecast\nPyCPT and Xcast Installation\n\n\n\n\nParticipant exercise time in green",
+    "crumbs": [
+      "Week 2- Statistical seasonal climate forecasting with applications"
+    ]
   }
 ]

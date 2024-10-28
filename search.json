@@ -14,7 +14,7 @@
     "href": "intro_gen.html",
     "title": "Workshop Objectives",
     "section": "",
-    "text": "The main objectives of this training workshop are to:\n\nEvaluate seasonal forecasts from global climate centers; - Introduce and train participants on new methods and tools, such as PyCPT, Xcast, and other AI-based methods currently being explored for seasonal and sub-seasonal forecasting;\nProvide hands-on experience in the comprehensive evaluation of new methods to facilitate an understanding of their strengths and weaknesses in the context of forecasting for West Africa and the Sahel;\nMaster the combination of the most effective methods to generate more consolidated and accurate seasonal forecasts for the region;\nEquip participants with the skills necessary to implement these forecasting methodologies operationally within their institutions, thereby improving forecasting services and climate services across the region.",
+    "text": "The main objectives of this training workshop are to:\n\nEvaluate seasonal forecasts from global climate centers; - Introduce and train participants on new methods and tools currently being explored for seasonal and sub-seasonal forecasting;\nProvide hands-on experience in the comprehensive evaluation of new methods to facilitate an understanding of their strengths and weaknesses in the context of forecasting for West Africa and the Sahel;\nMaster the combination of the most effective methods to generate more consolidated and accurate seasonal forecasts for the region;\nEquip participants with the skills necessary to implement these forecasting methodologies operationally within their institutions, thereby improving forecasting services and climate services across the region.",
     "crumbs": [
       "Workshop Objectives"
     ]
@@ -35,7 +35,7 @@
     "href": "Python.html",
     "title": "2  Overview of Data Structures in Python and the Libraries NumPy and Xarray.",
     "section": "",
-    "text": "Facilitator: Mandela HOUNGNIBO\nkeys points: Python builtin data structures and data science package (Numpy and Xarray, …)\n\nDownload and Install anaconda\n\n\nFor Windows, download the executable here\nFor Linux (Ubuntu), in the terminal run:\nsudo apt-get update\nsudo apt-get upgrade\nsudo apt-get install wget\nwget -c -r https://repo.anaconda.com/archive/Anaconda3-2024.06-1-Linux-x86_64.sh --no-check-certificate\n\n\nData Structures in Python: Download notebook here\nLibraries NumPy and Xarray: Download notebook here",
+    "text": "Facilitator: Mandela HOUNGNIBO\nkeys points: Python builtin data structures and data science package (Numpy and Xarray, …)\n\nDownload and Install anaconda\n\n\nFor Windows, download the executable here\nFor Linux (Ubuntu), in the terminal run:\nsudo apt-get update\nsudo apt-get upgrade\nsudo apt-get install wget\nwget -c -r https://repo.anaconda.com/archive/Anaconda3-2024.06-1-Linux-x86_64.sh --no-check-certificate\nbash Anaconda3-2024.06-1-Linux-x86_64.sh\n\n\nManaging environments with conda\n\nIt is strongly recommended to read conda cheatsheets here or Getting Started with Conda\n# create WAS_S2S environment \nconda create --name WAS_S2S \n# activate the environment\nconda activate WAS_S2S\n# see all the environments on your system\nconda info --envs\n# list all the packages in the environment\nconda list\n# install a package in the environment\nconda install xarray\n\nIntroduction to JupyterLab\n\nJupyterLab will be our primary method for interacting with the computer throughout python. It is a web-based interactive development environment. Once activated you environment (conda activate WAS_S2S), run the following command in the terminal:\njupyter lab --ServerApp.iopub_data_rate_limit=1.0e20\n\nFundamentals in Python: Download notebook here\nLibraries NumPy and Xarray: Download notebook here",
     "crumbs": [
       "Week 1- Overview: Climate and its variability in WAS, Overview on python and validation of seasonal forecast of global climate centers.",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Overview of Data Structures in Python and the Libraries NumPy and Xarray.</span>"
@@ -61,17 +61,6 @@
     "crumbs": [
       "Week 1- Overview: Climate and its variability in WAS, Overview on python and validation of seasonal forecast of global climate centers.",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>NMME and C3S Models in Climate Data Store and IRI Data Library</span>"
-    ]
-  },
-  {
-    "objectID": "Install_pycpt_xcast.html",
-    "href": "Install_pycpt_xcast.html",
-    "title": "7  Install PyCPT and Xcast.",
-    "section": "",
-    "text": "Facilitator: Bernard MINOUNGOU / Mandela HOUNGNIBO",
-    "crumbs": [
-      "Week 1- Overview: Climate and its variability in WAS, Overview on python and validation of seasonal forecast of global climate centers.",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Install PyCPT and Xcast.</span>"
     ]
   },
   {

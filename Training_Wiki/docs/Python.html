@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -230,19 +196,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./s2s_data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">NMME and C3S Models in Climate Data Store and IRI Data Library</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Access Dynamical Model data for Seasonal Forecasting</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./obs_data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Observational dataset.</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Observational Datasets and Their Improvements.</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./eval_seasonal.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Validation of Dynamical Seasonal Forecast.</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">First WAS NextGen system approach.</span></span></a>
   </div>
 </li>
       </ul>
@@ -284,65 +250,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div style="margin-top: 20px;">
 
 </div>
-<p>Facilitator: <strong>Mandela HOUNGNIBO</strong></p>
+<p>Facilitator: <strong>Arsène Kiema &amp; Mandela HOUNGNIBO</strong></p>
 <p><em>keys points:</em> Python builtin data structures and data science package (Numpy and Xarray, …)</p>
-<blockquote class="blockquote">
-<p><strong>⚠️ I highly recommend to install WSL on your computer</strong> if you have a Windows OS (10 and 11). It will allow you to run Linux commands on your Windows machine. Here is the <a href="https://documentation.ubuntu.com/wsl/en/latest/guides/install-ubuntu-wsl2/">link</a> to install WSL.</p>
-</blockquote>
-<ol type="1">
-<li>Download and Install miniconda</li>
-</ol>
-<ul>
-<li><p>For Windows, download the executable <a href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe">here</a></p></li>
-<li><p>For Linux (Ubuntu), in the terminal run:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt-get update</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt-get upgrade</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt-get install wget</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> <span class="at">-c</span> <span class="at">-r</span> https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh <span class="at">--no-check-certificate</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">bash</span> Miniconda3-latest-Linux-x86_64.sh</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Managing environments with conda</p></li>
-</ul>
-<p>It is strongly recommended to read conda cheatsheets <a href="https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf">here</a> or <a href="https://conda.io/docs/user-guide/getting-started.html#">Getting Started with Conda</a>. here are some important conda command you will use along the training:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># to create an environment:</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">-n</span> your_environment_name</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># to activate your environment:</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate your_environment_name</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># to desactivate your environment:</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> deactivate your_environment_name</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co"># to install packages in your environment:</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> install package_name</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co"># to list all the packages in your environment:</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> list</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="co"># to see all the environments on your system:</span></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> info <span class="at">--envs</span></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="co"># conda remove your environment</span></span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> env remove <span class="at">-n</span> your_environment_name</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ol start="2" type="1">
-<li>Specific indication for the training</li>
-</ol>
-<p>For this training, I export my environment to a file called <code>environment.yml</code>. You can download it <a href="https://github.com/hmandela/WAS_S2S_Training/blob/main/environment.yml">here</a>. go to the directory where the file is located and run the following command in the terminal:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create the environment from the environment.yml file</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> env create <span class="at">-f</span> environment.yml <span class="at">-n</span> WAS_S2S</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>!-- <span class="kw">```</span> <span class="ex">--</span><span class="op">&gt;</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ex">This</span> command line will reproduce my environment in your computer with specific package, run the following command in the terminal:</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="ex">we</span> will create an environment called WAS_S2S and install some packages in it. </span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="ex">3.</span>  Introduction to JupyterLab</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="ex">[JupyterLab]</span><span class="er">(</span><span class="ex">https://jupyterlab.readthedocs.io</span><span class="kw">)</span> <span class="ex">will</span> be our primary method for interacting with the computer throughout python. It is a web-based interactive development environment. Once activated you environment <span class="er">(</span><span class="kw">```</span> <span class="ex">conda</span> activate WAS_S2S<span class="kw">```)</span><span class="ex">,</span> run the following command in the terminal:</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="kw">```</span> bash</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="ex">jupyter</span> lab <span class="at">--ServerApp.iopub_data_rate_limit</span><span class="op">=</span>1.0e20</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ol start="4" type="1">
-<li>Download notebooks <a href="https://github.com/hmandela/WAS_S2S_Training/blob/main/python_course_WAS_S2S.zip">here</a> and unzip it in your working directory.</li>
-</ol>
-<!-- conda install -c conda-forge jupyterlab -->
+<p>Download materials <a href="https://github.com/hmandela/WAS_S2S_Training/blob/main/presentations/">here</a></p>
 
 
 
@@ -771,8 +681,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./s2s_data.html" class="pagination-link" aria-label="NMME and C3S Models in Climate Data Store and IRI Data Library">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">NMME and C3S Models in Climate Data Store and IRI Data Library</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./s2s_data.html" class="pagination-link" aria-label="Access Dynamical Model data for Seasonal Forecasting">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Access Dynamical Model data for Seasonal Forecasting</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

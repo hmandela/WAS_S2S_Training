@@ -85,6 +85,28 @@
     ]
   },
   {
+    "objectID": "obs_data.html",
+    "href": "obs_data.html",
+    "title": "6  Observational Datasets and Their Improvements.",
+    "section": "",
+    "text": "Facilitator: Mandela HOUNGNIBO\nkeys points:\n\n\nGlobal Observing System (GOS) and its role in climate monitoring and prediction,\nIn-situ observations (pros and cons),\nSatellite and other proxies (pros and cons),\nMerging Satellite and in-situ to improve observational datasets,\nPractical examples,\n…\n\nDownload materials:\n\nLectures here\nPractical exercises here",
+    "crumbs": [
+      "Week 1- Overview: Climate and its variability in WAS, Scientific Fundation for Seasonal Forecasts, WASS2S Approaches.",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Observational Datasets and Their Improvements.</span>"
+    ]
+  },
+  {
+    "objectID": "eval_seasonal.html",
+    "href": "eval_seasonal.html",
+    "title": "7  Validation of GCM seasonal forecasts outputs.",
+    "section": "",
+    "text": "Facilitator: Mandela HOUNGNIBO\nkeys points:\n\n\nDeterministic validation metrics,\nProbabilistic validation metrics,\nReliability diagrams,\nROC curves,\nTaylor diagrams,\nPractical exercises on validation of GCM seasonal forecasts outputs,\n…\n\nDownload materials:\n\nLectures here\nPractical exercises here",
+    "crumbs": [
+      "Week 1- Overview: Climate and its variability in WAS, Scientific Fundation for Seasonal Forecasts, WASS2S Approaches.",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Validation of GCM seasonal forecasts outputs.</span>"
+    ]
+  },
+  {
     "objectID": "part2.html",
     "href": "part2.html",
     "title": "Week 2- Statistical seasonal climate forecasting with applications",
